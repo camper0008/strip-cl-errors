@@ -1,0 +1,986 @@
+[1/30] Compiling C++ object eh_viewer.exe.p/data_parser_data_parser.cpp.obj
+FAILED: [code=1] eh_viewer.exe.p/data_parser_data_parser.cpp.obj 
+"clang++" "-Ieh_viewer.exe.p" "-I." "-I.." "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-Isubprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking\backends" "-fdiagnostics-color=always" "-D_GLIBCXX_ASSERTIONS=1" "-D_FILE_OFFSET_BITS=64" "-Wall" "-Winvalid-pch" "-Wextra" "-Wpedantic" "-Werror" "-std=c++17" "-O0" "-g" "-DIMGUI_API=" -MD -MQ eh_viewer.exe.p/data_parser_data_parser.cpp.obj -MF "eh_viewer.exe.p\data_parser_data_parser.cpp.obj.d" -o eh_viewer.exe.p/data_parser_data_parser.cpp.obj "-c" ../data_parser/data_parser.cpp
+In file included from ../data_parser/data_parser.cpp:1:
+In file included from ../data_parser/data_parser.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vector:8:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\yvals_core.h:898:1: error: static_assert failed "error STL1000: Unexpected compiler version, expected Clang 17.0.0 or newer."
+_EMIT_STL_ERROR(STL1000, "Unexpected compiler version, expected Clang 17.0.0 or newer.");
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\yvals_core.h:519:44: note: expanded from macro '_EMIT_STL_ERROR'
+#define _EMIT_STL_ERROR(NUMBER, MESSAGE)   static_assert(false, "error " #NUMBER ": " MESSAGE)
+                                           ^             ~~~~~
+In file included from ../data_parser/data_parser.cpp:1:
+In file included from ../data_parser/data_parser.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vector:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_bit_utils.hpp:12:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xtr1common:178:12: error: use of undeclared identifier '__builtin_is_constant_evaluated'; did you mean '_Is_constant_evaluated'?
+    return __builtin_is_constant_evaluated();
+           ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xtr1common:177:27: note: '_Is_constant_evaluated' declared here
+_NODISCARD constexpr bool _Is_constant_evaluated() noexcept { // Internal function for any standard mode
+                          ^
+In file included from ../data_parser/data_parser.cpp:1:
+In file included from ../data_parser/data_parser.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vector:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xmemory:13:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\new:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\exception:12:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\type_traits:2492:31: error: '_To' does not refer to a value
+    return __builtin_bit_cast(_To, _Val);
+                              ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\type_traits:2487:17: note: declared here
+template <class _To, class _From,
+                ^
+In file included from ../data_parser/data_parser.cpp:1:
+In file included from ../data_parser/data_parser.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vector:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xmemory:15:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xutility:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_iter_core.hpp:10:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:226:9: error: expected member name or ';' after declaration specifiers
+        !conjunction_v<_Is_implicitly_default_constructible<_Uty1>, _Is_implicitly_default_constructible<_Uty2>>)
+        ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:226:9: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:225:23: note: to match this '('
+    constexpr explicit(
+                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:24: error: expected member name or ';' after declaration specifiers
+    constexpr explicit(!conjunction_v<is_convertible<const _Other1&, _Ty1>, is_convertible<const _Other2&, _Ty2>>)
+    ~~~~~~~~~~~~~~~~~~ ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:24: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:23: note: to match this '('
+    constexpr explicit(!conjunction_v<is_convertible<const _Other1&, _Ty1>, is_convertible<const _Other2&, _Ty2>>)
+                      ^
+In file included from ../data_parser/data_parser.cpp:1:
+In file included from ../data_parser/data_parser.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vector:15:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xpolymorphic_allocator.h:10:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:342:9: error: expected member name or ';' after declaration specifiers
+        !conjunction_v<_Is_implicitly_default_constructible<_This2>, _Is_implicitly_default_constructible<_Rest>...>)
+        ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:342:9: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:341:23: note: to match this '('
+    constexpr explicit(
+                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:5: error: non-static data member cannot be constexpr; did you intend to make it const?
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+    ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:24: error: member '_Tuple_conditional_explicit_v' declared as a template
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+                       ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:79: error: expected ';' at end of declaration list
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+                                                                              ^
+12 errors generated.
+[2/30] Compiling C++ object subprojects/imgui-1.91.6-docking/libimgui.a.p/misc_cpp_imgui_stdlib.cpp.obj
+FAILED: [code=1] subprojects/imgui-1.91.6-docking/libimgui.a.p/misc_cpp_imgui_stdlib.cpp.obj 
+"clang++" "-Isubprojects\imgui-1.91.6-docking\libimgui.a.p" "-Isubprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking\backends" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fvisibility=hidden" "-fdiagnostics-color=always" "-D_GLIBCXX_ASSERTIONS=1" "-D_FILE_OFFSET_BITS=64" "-Wall" "-Winvalid-pch" "-Wextra" "-Wpedantic" "-Werror" "-std=c++17" "-O0" "-g" "-DIMGUI_API=" -MD -MQ subprojects/imgui-1.91.6-docking/libimgui.a.p/misc_cpp_imgui_stdlib.cpp.obj -MF "subprojects\imgui-1.91.6-docking\libimgui.a.p\misc_cpp_imgui_stdlib.cpp.obj.d" -o subprojects/imgui-1.91.6-docking/libimgui.a.p/misc_cpp_imgui_stdlib.cpp.obj "-c" ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.cpp
+In file included from ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.cpp:11:
+In file included from ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.h:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\string:8:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\yvals_core.h:898:1: error: static_assert failed "error STL1000: Unexpected compiler version, expected Clang 17.0.0 or newer."
+_EMIT_STL_ERROR(STL1000, "Unexpected compiler version, expected Clang 17.0.0 or newer.");
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\yvals_core.h:519:44: note: expanded from macro '_EMIT_STL_ERROR'
+#define _EMIT_STL_ERROR(NUMBER, MESSAGE)   static_assert(false, "error " #NUMBER ": " MESSAGE)
+                                           ^             ~~~~~
+In file included from ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.cpp:11:
+In file included from ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.h:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\string:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xstring:13:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\iosfwd:14:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xtr1common:178:12: error: use of undeclared identifier '__builtin_is_constant_evaluated'; did you mean '_Is_constant_evaluated'?
+    return __builtin_is_constant_evaluated();
+           ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xtr1common:177:27: note: '_Is_constant_evaluated' declared here
+_NODISCARD constexpr bool _Is_constant_evaluated() noexcept { // Internal function for any standard mode
+                          ^
+In file included from ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.cpp:11:
+In file included from ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.h:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\string:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xstring:14:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xmemory:13:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\new:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\exception:12:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\type_traits:2492:31: error: '_To' does not refer to a value
+    return __builtin_bit_cast(_To, _Val);
+                              ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\type_traits:2487:17: note: declared here
+template <class _To, class _From,
+                ^
+In file included from ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.cpp:11:
+In file included from ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.h:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\string:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xstring:14:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xmemory:15:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xutility:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_iter_core.hpp:10:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:226:9: error: expected member name or ';' after declaration specifiers
+        !conjunction_v<_Is_implicitly_default_constructible<_Uty1>, _Is_implicitly_default_constructible<_Uty2>>)
+        ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:226:9: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:225:23: note: to match this '('
+    constexpr explicit(
+                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:24: error: expected member name or ';' after declaration specifiers
+    constexpr explicit(!conjunction_v<is_convertible<const _Other1&, _Ty1>, is_convertible<const _Other2&, _Ty2>>)
+    ~~~~~~~~~~~~~~~~~~ ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:24: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:23: note: to match this '('
+    constexpr explicit(!conjunction_v<is_convertible<const _Other1&, _Ty1>, is_convertible<const _Other2&, _Ty2>>)
+                      ^
+In file included from ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.cpp:11:
+In file included from ../subprojects/imgui-1.91.6-docking/misc/cpp/imgui_stdlib.h:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\string:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xstring:17:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xpolymorphic_allocator.h:10:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:342:9: error: expected member name or ';' after declaration specifiers
+        !conjunction_v<_Is_implicitly_default_constructible<_This2>, _Is_implicitly_default_constructible<_Rest>...>)
+        ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:342:9: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:341:23: note: to match this '('
+    constexpr explicit(
+                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:5: error: non-static data member cannot be constexpr; did you intend to make it const?
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+    ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:24: error: member '_Tuple_conditional_explicit_v' declared as a template
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+                       ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:79: error: expected ';' at end of declaration list
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+                                                                              ^
+12 errors generated.
+[3/30] Compiling C++ object eh_viewer.exe.p/data_parser_eh_info.cpp.obj
+FAILED: [code=1] eh_viewer.exe.p/data_parser_eh_info.cpp.obj 
+"clang++" "-Ieh_viewer.exe.p" "-I." "-I.." "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-Isubprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking\backends" "-fdiagnostics-color=always" "-D_GLIBCXX_ASSERTIONS=1" "-D_FILE_OFFSET_BITS=64" "-Wall" "-Winvalid-pch" "-Wextra" "-Wpedantic" "-Werror" "-std=c++17" "-O0" "-g" "-DIMGUI_API=" -MD -MQ eh_viewer.exe.p/data_parser_eh_info.cpp.obj -MF "eh_viewer.exe.p\data_parser_eh_info.cpp.obj.d" -o eh_viewer.exe.p/data_parser_eh_info.cpp.obj "-c" ../data_parser/eh_info.cpp
+In file included from ../data_parser/eh_info.cpp:1:
+In file included from ../data_parser/eh_info.h:3:
+In file included from ../data_parser/data_parser.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vector:8:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\yvals_core.h:898:1: error: static_assert failed "error STL1000: Unexpected compiler version, expected Clang 17.0.0 or newer."
+_EMIT_STL_ERROR(STL1000, "Unexpected compiler version, expected Clang 17.0.0 or newer.");
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\yvals_core.h:519:44: note: expanded from macro '_EMIT_STL_ERROR'
+#define _EMIT_STL_ERROR(NUMBER, MESSAGE)   static_assert(false, "error " #NUMBER ": " MESSAGE)
+                                           ^             ~~~~~
+In file included from ../data_parser/eh_info.cpp:1:
+In file included from ../data_parser/eh_info.h:3:
+In file included from ../data_parser/data_parser.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vector:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_bit_utils.hpp:12:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xtr1common:178:12: error: use of undeclared identifier '__builtin_is_constant_evaluated'; did you mean '_Is_constant_evaluated'?
+    return __builtin_is_constant_evaluated();
+           ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xtr1common:177:27: note: '_Is_constant_evaluated' declared here
+_NODISCARD constexpr bool _Is_constant_evaluated() noexcept { // Internal function for any standard mode
+                          ^
+In file included from ../data_parser/eh_info.cpp:1:
+In file included from ../data_parser/eh_info.h:3:
+In file included from ../data_parser/data_parser.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vector:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xmemory:13:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\new:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\exception:12:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\type_traits:2492:31: error: '_To' does not refer to a value
+    return __builtin_bit_cast(_To, _Val);
+                              ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\type_traits:2487:17: note: declared here
+template <class _To, class _From,
+                ^
+In file included from ../data_parser/eh_info.cpp:1:
+In file included from ../data_parser/eh_info.h:3:
+In file included from ../data_parser/data_parser.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vector:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xmemory:15:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xutility:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_iter_core.hpp:10:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:226:9: error: expected member name or ';' after declaration specifiers
+        !conjunction_v<_Is_implicitly_default_constructible<_Uty1>, _Is_implicitly_default_constructible<_Uty2>>)
+        ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:226:9: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:225:23: note: to match this '('
+    constexpr explicit(
+                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:24: error: expected member name or ';' after declaration specifiers
+    constexpr explicit(!conjunction_v<is_convertible<const _Other1&, _Ty1>, is_convertible<const _Other2&, _Ty2>>)
+    ~~~~~~~~~~~~~~~~~~ ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:24: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:23: note: to match this '('
+    constexpr explicit(!conjunction_v<is_convertible<const _Other1&, _Ty1>, is_convertible<const _Other2&, _Ty2>>)
+                      ^
+In file included from ../data_parser/eh_info.cpp:1:
+In file included from ../data_parser/eh_info.h:3:
+In file included from ../data_parser/data_parser.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vector:15:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xpolymorphic_allocator.h:10:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:342:9: error: expected member name or ';' after declaration specifiers
+        !conjunction_v<_Is_implicitly_default_constructible<_This2>, _Is_implicitly_default_constructible<_Rest>...>)
+        ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:342:9: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:341:23: note: to match this '('
+    constexpr explicit(
+                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:5: error: non-static data member cannot be constexpr; did you intend to make it const?
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+    ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:24: error: member '_Tuple_conditional_explicit_v' declared as a template
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+                       ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:79: error: expected ';' at end of declaration list
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+                                                                              ^
+12 errors generated.
+[4/30] Compiling C++ object subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_win32.cpp.obj
+FAILED: [code=1] subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_win32.cpp.obj 
+"clang++" "-Isubprojects\imgui-1.91.6-docking\libimgui.a.p" "-Isubprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking\backends" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fvisibility=hidden" "-fdiagnostics-color=always" "-D_GLIBCXX_ASSERTIONS=1" "-D_FILE_OFFSET_BITS=64" "-Wall" "-Winvalid-pch" "-Wextra" "-Wpedantic" "-Werror" "-std=c++17" "-O0" "-g" "-DIMGUI_API=" -MD -MQ subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_win32.cpp.obj -MF "subprojects\imgui-1.91.6-docking\libimgui.a.p\backends_imgui_impl_win32.cpp.obj.d" -o subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_win32.cpp.obj "-c" ../subprojects/imgui-1.91.6-docking/backends/imgui_impl_win32.cpp
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_win32.cpp:103:34: error: unknown warning group '-Wcast-function-type', ignored [-Werror,-Wunknown-warning-option]
+#pragma clang diagnostic ignored "-Wcast-function-type"     // warning: cast between incompatible function types (for loader)
+                                 ^
+1 error generated.
+[5/30] Compiling C++ object eh_viewer.exe.p/data_parser_file_stream.cpp.obj
+FAILED: [code=1] eh_viewer.exe.p/data_parser_file_stream.cpp.obj 
+"clang++" "-Ieh_viewer.exe.p" "-I." "-I.." "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-Isubprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking\backends" "-fdiagnostics-color=always" "-D_GLIBCXX_ASSERTIONS=1" "-D_FILE_OFFSET_BITS=64" "-Wall" "-Winvalid-pch" "-Wextra" "-Wpedantic" "-Werror" "-std=c++17" "-O0" "-g" "-DIMGUI_API=" -MD -MQ eh_viewer.exe.p/data_parser_file_stream.cpp.obj -MF "eh_viewer.exe.p\data_parser_file_stream.cpp.obj.d" -o eh_viewer.exe.p/data_parser_file_stream.cpp.obj "-c" ../data_parser/file_stream.cpp
+In file included from ../data_parser/file_stream.cpp:1:
+In file included from ../data_parser/file_stream.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\fstream:8:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\yvals_core.h:898:1: error: static_assert failed "error STL1000: Unexpected compiler version, expected Clang 17.0.0 or newer."
+_EMIT_STL_ERROR(STL1000, "Unexpected compiler version, expected Clang 17.0.0 or newer.");
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\yvals_core.h:519:44: note: expanded from macro '_EMIT_STL_ERROR'
+#define _EMIT_STL_ERROR(NUMBER, MESSAGE)   static_assert(false, "error " #NUMBER ": " MESSAGE)
+                                           ^             ~~~~~
+In file included from ../data_parser/file_stream.cpp:1:
+In file included from ../data_parser/file_stream.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\fstream:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_filebuf.hpp:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\streambuf:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xiosbase:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\system_error:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_system_error_abi.hpp:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\cstddef:12:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xtr1common:178:12: error: use of undeclared identifier '__builtin_is_constant_evaluated'; did you mean '_Is_constant_evaluated'?
+    return __builtin_is_constant_evaluated();
+           ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xtr1common:177:27: note: '_Is_constant_evaluated' declared here
+_NODISCARD constexpr bool _Is_constant_evaluated() noexcept { // Internal function for any standard mode
+                          ^
+In file included from ../data_parser/file_stream.cpp:1:
+In file included from ../data_parser/file_stream.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\fstream:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_filebuf.hpp:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\streambuf:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xiosbase:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\system_error:13:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\stdexcept:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\exception:12:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\type_traits:2492:31: error: '_To' does not refer to a value
+    return __builtin_bit_cast(_To, _Val);
+                              ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\type_traits:2487:17: note: declared here
+template <class _To, class _From,
+                ^
+In file included from ../data_parser/file_stream.cpp:1:
+In file included from ../data_parser/file_stream.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\fstream:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_filebuf.hpp:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\streambuf:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xiosbase:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\system_error:13:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\stdexcept:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xstring:14:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xmemory:15:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xutility:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_iter_core.hpp:10:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:226:9: error: expected member name or ';' after declaration specifiers
+        !conjunction_v<_Is_implicitly_default_constructible<_Uty1>, _Is_implicitly_default_constructible<_Uty2>>)
+        ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:226:9: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:225:23: note: to match this '('
+    constexpr explicit(
+                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:24: error: expected member name or ';' after declaration specifiers
+    constexpr explicit(!conjunction_v<is_convertible<const _Other1&, _Ty1>, is_convertible<const _Other2&, _Ty2>>)
+    ~~~~~~~~~~~~~~~~~~ ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:24: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\utility:265:23: note: to match this '('
+    constexpr explicit(!conjunction_v<is_convertible<const _Other1&, _Ty1>, is_convertible<const _Other2&, _Ty2>>)
+                      ^
+In file included from ../data_parser/file_stream.cpp:1:
+In file included from ../data_parser/file_stream.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\fstream:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_filebuf.hpp:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\streambuf:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xiosbase:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\system_error:13:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\stdexcept:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xstring:17:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xpolymorphic_allocator.h:10:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:342:9: error: expected member name or ';' after declaration specifiers
+        !conjunction_v<_Is_implicitly_default_constructible<_This2>, _Is_implicitly_default_constructible<_Rest>...>)
+        ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:342:9: error: expected ')'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:341:23: note: to match this '('
+    constexpr explicit(
+                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:5: error: non-static data member cannot be constexpr; did you intend to make it const?
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+    ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:24: error: member '_Tuple_conditional_explicit_v' declared as a template
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+                       ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\tuple:376:79: error: expected ';' at end of declaration list
+    constexpr explicit(_Tuple_conditional_explicit_v<tuple, const _Other&...>)
+                                                                              ^
+In file included from ../data_parser/file_stream.cpp:1:
+In file included from ../data_parser/file_stream.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\fstream:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_filebuf.hpp:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\streambuf:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xiosbase:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\system_error:17:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\atomic:534:16: error: use of undeclared identifier '__iso_volatile_load32'
+        while (__iso_volatile_load32(&reinterpret_cast<int&>(_Spinlock)) != 0) {
+               ^
+In file included from ../data_parser/file_stream.cpp:1:
+In file included from ../data_parser/file_stream.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\fstream:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_filebuf.hpp:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\streambuf:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xiosbase:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xlocale:12:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\memory:1139:23: error: use of undeclared identifier '__iso_volatile_load32'
+        long _Count = __iso_volatile_load32(reinterpret_cast<volatile int*>(&_Volatile_uses));
+                      ^
+In file included from ../data_parser/file_stream.cpp:1:
+In file included from ../data_parser/file_stream.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\fstream:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_filebuf.hpp:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\streambuf:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xiosbase:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\system_error:17:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\atomic:979:13: error: use of undeclared identifier '__iso_volatile_store32'
+            _ATOMIC_STORE_PREFIX(32, _Mem, _As_bytes)
+            ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\atomic:201:9: note: expanded from macro '_ATOMIC_STORE_PREFIX'
+        __iso_volatile_store##_Width((_Ptr), (_Desired)); \
+        ^
+<scratch space>:105:1: note: expanded from here
+__iso_volatile_store32
+^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\atomic:2826:18: note: in instantiation of member function 'std::_Atomic_storage<long, 4>::store' requested here
+        _Storage.store(false, _Order);
+                 ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\atomic:979:13: error: use of undeclared identifier '__iso_volatile_store32'
+            _ATOMIC_STORE_PREFIX(32, _Mem, _As_bytes)
+            ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\atomic:204:9: note: expanded from macro '_ATOMIC_STORE_PREFIX'
+        __STORE_RELEASE(_Width, _Ptr, _Desired)           \
+        ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\atomic:195:5: note: expanded from macro '__STORE_RELEASE'
+    __iso_volatile_store##_Width((_Ptr), (_Desired));
+    ^
+<scratch space>:112:1: note: expanded from here
+__iso_volatile_store32
+^
+In file included from ../data_parser/file_stream.cpp:1:
+In file included from ../data_parser/file_stream.h:3:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\fstream:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\__msvc_filebuf.hpp:12:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\streambuf:10:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xiosbase:11:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\system_error:17:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\atomic:2214:57: error: too many arguments to function call, expected single argument '_Value', have 2 arguments
+        const_cast<atomic*>(this)->_Base::store(_Value, _Order);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~         ^~~~~~
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\atomic:2830:18: note: in instantiation of member function 'std::atomic<long>::store' requested here
+        _Storage.store(false, _Order);
+                 ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\atomic:969:5: note: 'store' declared here
+    void store(const _TVal _Value) noexcept { // store with sequential consistency
+    ^
+17 errors generated.
+[6/30] Compiling C object subprojects/glfw-3.4/glfw3-3.dll.p/src_monitor.c.obj
+FAILED: [code=1] subprojects/glfw-3.4/glfw3-3.dll.p/src_monitor.c.obj 
+"clang" "-Isubprojects\glfw-3.4\glfw3-3.dll.p" "-Isubprojects\glfw-3.4" "-I..\subprojects\glfw-3.4" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fdiagnostics-color=always" "-D_FILE_OFFSET_BITS=64" "-Werror" "-std=c99" "-O0" "-g" "-D_GLFW_BUILD_DLL" "-D_DEFAULT_SOURCE" "-D_GLFW_WIN32" "-pthread" -MD -MQ subprojects/glfw-3.4/glfw3-3.dll.p/src_monitor.c.obj -MF "subprojects\glfw-3.4\glfw3-3.dll.p\src_monitor.c.obj.d" -o subprojects/glfw-3.4/glfw3-3.dll.p/src_monitor.c.obj "-c" ../subprojects/glfw-3.4/src/monitor.c
+../subprojects/glfw-3.4/src/monitor.c:177:5: error: 'strncpy' is deprecated: This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+    strncpy(monitor->name, name, sizeof(monitor->name) - 1);
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:334:1: note: 'strncpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1921:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1, _TType2 _TArg2);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+1 error generated.
+[7/30] Compiling C object subprojects/glfw-3.4/glfw3-3.dll.p/src_window.c.obj
+FAILED: [code=1] subprojects/glfw-3.4/glfw3-3.dll.p/src_window.c.obj 
+"clang" "-Isubprojects\glfw-3.4\glfw3-3.dll.p" "-Isubprojects\glfw-3.4" "-I..\subprojects\glfw-3.4" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fdiagnostics-color=always" "-D_FILE_OFFSET_BITS=64" "-Werror" "-std=c99" "-O0" "-g" "-D_GLFW_BUILD_DLL" "-D_DEFAULT_SOURCE" "-D_GLFW_WIN32" "-pthread" -MD -MQ subprojects/glfw-3.4/glfw3-3.dll.p/src_window.c.obj -MF "subprojects\glfw-3.4\glfw3-3.dll.p\src_window.c.obj.d" -o subprojects/glfw-3.4/glfw3-3.dll.p/src_window.c.obj "-c" ../subprojects/glfw-3.4/src/window.c
+../subprojects/glfw-3.4/src/window.c:448:13: error: 'strncpy' is deprecated: This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strncpy(_glfw.hints.window.ns.frameName, value,
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:334:1: note: 'strncpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1921:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1, _TType2 _TArg2);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/window.c:452:13: error: 'strncpy' is deprecated: This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strncpy(_glfw.hints.window.x11.className, value,
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:334:1: note: 'strncpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1921:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1, _TType2 _TArg2);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/window.c:456:13: error: 'strncpy' is deprecated: This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strncpy(_glfw.hints.window.x11.instanceName, value,
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:334:1: note: 'strncpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1921:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1, _TType2 _TArg2);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/window.c:460:13: error: 'strncpy' is deprecated: This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strncpy(_glfw.hints.window.wl.appId, value,
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:334:1: note: 'strncpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1921:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1, _TType2 _TArg2);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+4 errors generated.
+[8/30] Compiling C object subprojects/glfw-3.4/glfw3-3.dll.p/src_input.c.obj
+FAILED: [code=1] subprojects/glfw-3.4/glfw3-3.dll.p/src_input.c.obj 
+"clang" "-Isubprojects\glfw-3.4\glfw3-3.dll.p" "-Isubprojects\glfw-3.4" "-I..\subprojects\glfw-3.4" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fdiagnostics-color=always" "-D_FILE_OFFSET_BITS=64" "-Werror" "-std=c99" "-O0" "-g" "-D_GLFW_BUILD_DLL" "-D_DEFAULT_SOURCE" "-D_GLFW_WIN32" "-pthread" -MD -MQ subprojects/glfw-3.4/glfw3-3.dll.p/src_input.c.obj -MF "subprojects\glfw-3.4\glfw3-3.dll.p\src_input.c.obj.d" -o subprojects/glfw-3.4/glfw3-3.dll.p/src_input.c.obj "-c" ../subprojects/glfw-3.4/src/input.c
+../subprojects/glfw-3.4/src/input.c:528:5: error: 'strncpy' is deprecated: This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+    strncpy(js->name, name, sizeof(js->name) - 1);
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:334:1: note: 'strncpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1921:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1, _TType2 _TArg2);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/input.c:529:5: error: 'strncpy' is deprecated: This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+    strncpy(js->guid, guid, sizeof(js->guid) - 1);
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:334:1: note: 'strncpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1921:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1, _TType2 _TArg2);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+2 errors generated.
+[9/30] Compiling C object subprojects/glfw-3.4/glfw3-3.dll.p/src_context.c.obj
+FAILED: [code=1] subprojects/glfw-3.4/glfw3-3.dll.p/src_context.c.obj 
+"clang" "-Isubprojects\glfw-3.4\glfw3-3.dll.p" "-Isubprojects\glfw-3.4" "-I..\subprojects\glfw-3.4" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fdiagnostics-color=always" "-D_FILE_OFFSET_BITS=64" "-Werror" "-std=c99" "-O0" "-g" "-D_GLFW_BUILD_DLL" "-D_DEFAULT_SOURCE" "-D_GLFW_WIN32" "-pthread" -MD -MQ subprojects/glfw-3.4/glfw3-3.dll.p/src_context.c.obj -MF "subprojects\glfw-3.4\glfw3-3.dll.p\src_context.c.obj.d" -o subprojects/glfw-3.4/glfw3-3.dll.p/src_context.c.obj "-c" ../subprojects/glfw-3.4/src/context.c
+../subprojects/glfw-3.4/src/context.c:408:10: error: 'sscanf' is deprecated: This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+    if (!sscanf(version, "%d.%d.%d",
+         ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h:2239:20: note: 'sscanf' has been explicitly marked deprecated here
+    _Check_return_ _CRT_INSECURE_DEPRECATE(sscanf_s)
+                   ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+1 error generated.
+[10/30] Compiling C object subprojects/glfw-3.4/glfw3-3.dll.p/src_init.c.obj
+FAILED: [code=1] subprojects/glfw-3.4/glfw3-3.dll.p/src_init.c.obj 
+"clang" "-Isubprojects\glfw-3.4\glfw3-3.dll.p" "-Isubprojects\glfw-3.4" "-I..\subprojects\glfw-3.4" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fdiagnostics-color=always" "-D_FILE_OFFSET_BITS=64" "-Werror" "-std=c99" "-O0" "-g" "-D_GLFW_BUILD_DLL" "-D_DEFAULT_SOURCE" "-D_GLFW_WIN32" "-pthread" -MD -MQ subprojects/glfw-3.4/glfw3-3.dll.p/src_init.c.obj -MF "subprojects\glfw-3.4\glfw3-3.dll.p\src_init.c.obj.d" -o subprojects/glfw-3.4/glfw3-3.dll.p/src_init.c.obj "-c" ../subprojects/glfw-3.4/src/init.c
+../subprojects/glfw-3.4/src/init.c:189:20: error: 'strtok' is deprecated: This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+    while ((line = strtok(text, "\r\n")))
+                   ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:435:16: note: 'strtok' has been explicitly marked deprecated here
+_Check_return_ _CRT_INSECURE_DEPRECATE(strtok_s)
+               ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:235:5: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+    strcpy(result, source);
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:327:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "The GLFW library is not initialized");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:329:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "There is no current context");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:331:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "Invalid argument for enum parameter");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:333:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "Invalid value for parameter");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:335:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "Out of memory");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:337:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "The requested API is unavailable");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:339:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "The requested API version is unavailable");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:341:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "A platform-specific error occurred");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:343:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "The requested format is unavailable");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:345:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "The specified window has no context");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:347:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "The specified cursor shape is unavailable");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:349:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "The requested feature cannot be implemented for this platform");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:351:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "The requested feature has not yet been implemented for this platform");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:353:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "The requested platform is unavailable");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:355:13: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+            strcpy(description, "ERROR: UNKNOWN GLFW ERROR");
+            ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/init.c:375:5: error: 'strcpy' is deprecated: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+    strcpy(error->description, description);
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:130:1: note: 'strcpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+18 errors generated.
+[11/30] Compiling C object subprojects/glfw-3.4/glfw3-3.dll.p/src_win32_monitor.c.obj
+FAILED: [code=1] subprojects/glfw-3.4/glfw3-3.dll.p/src_win32_monitor.c.obj 
+"clang" "-Isubprojects\glfw-3.4\glfw3-3.dll.p" "-Isubprojects\glfw-3.4" "-I..\subprojects\glfw-3.4" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fdiagnostics-color=always" "-D_FILE_OFFSET_BITS=64" "-Werror" "-std=c99" "-O0" "-g" "-D_GLFW_BUILD_DLL" "-D_DEFAULT_SOURCE" "-D_GLFW_WIN32" "-pthread" -MD -MQ subprojects/glfw-3.4/glfw3-3.dll.p/src_win32_monitor.c.obj -MF "subprojects\glfw-3.4\glfw3-3.dll.p\src_win32_monitor.c.obj.d" -o subprojects/glfw-3.4/glfw3-3.dll.p/src_win32_monitor.c.obj "-c" ../subprojects/glfw-3.4/src/win32_monitor.c
+../subprojects/glfw-3.4/src/win32_monitor.c:103:5: error: 'wcscpy' is deprecated: This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+    wcscpy(monitor->win32.adapterName, adapter->DeviceName);
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h:119:1: note: 'wcscpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+../subprojects/glfw-3.4/src/win32_monitor.c:112:9: error: 'wcscpy' is deprecated: This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+        wcscpy(monitor->win32.displayName, display->DeviceName);
+        ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h:119:1: note: 'wcscpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:821:5: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1'
+    __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(_ReturnType, _ReturnPolicy, _DeclSpec, _FuncName, _FuncName##_s, _DstType, _SalAttributeDst, _DstType, _Dst, _TType1, _TArg1)
+    ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1880:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+2 errors generated.
+[12/30] Compiling C object subprojects/glfw-3.4/glfw3-3.dll.p/src_win32_joystick.c.obj
+FAILED: [code=1] subprojects/glfw-3.4/glfw3-3.dll.p/src_win32_joystick.c.obj 
+"clang" "-Isubprojects\glfw-3.4\glfw3-3.dll.p" "-Isubprojects\glfw-3.4" "-I..\subprojects\glfw-3.4" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fdiagnostics-color=always" "-D_FILE_OFFSET_BITS=64" "-Werror" "-std=c99" "-O0" "-g" "-D_GLFW_BUILD_DLL" "-D_DEFAULT_SOURCE" "-D_GLFW_WIN32" "-pthread" -MD -MQ subprojects/glfw-3.4/glfw3-3.dll.p/src_win32_joystick.c.obj -MF "subprojects\glfw-3.4\glfw3-3.dll.p\src_win32_joystick.c.obj.d" -o subprojects/glfw-3.4/glfw3-3.dll.p/src_win32_joystick.c.obj "-c" ../subprojects/glfw-3.4/src/win32_joystick.c
+../subprojects/glfw-3.4/src/win32_joystick.c:760:9: error: 'strncpy' is deprecated: This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [-Werror,-Wdeprecated-declarations]
+        strncpy(original, guid, sizeof(original) - 1);
+        ^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h:334:1: note: 'strncpy' has been explicitly marked deprecated here
+__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX(
+^
+C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h:1921:17: note: expanded from macro '__DEFINE_CPP_OVERLOAD_STANDARD_NFUNC_0_2_EX'
+                _CRT_INSECURE_DEPRECATE(_SecureFuncName) _DeclSpec _ReturnType __cdecl _FuncName(_SalAttributeDst _DstType *_Dst, _TType1 _TArg1, _TType2 _TArg2);
+                ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:356:55: note: expanded from macro '_CRT_INSECURE_DEPRECATE'
+        #define _CRT_INSECURE_DEPRECATE(_Replacement) _CRT_DEPRECATE_TEXT(    \
+                                                      ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\vcruntime.h:346:47: note: expanded from macro '_CRT_DEPRECATE_TEXT'
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated(_Text))
+                                              ^
+1 error generated.
+[13/30] Compiling C++ object subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_dx10.cpp.obj
+FAILED: [code=1] subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_dx10.cpp.obj 
+"clang++" "-Isubprojects\imgui-1.91.6-docking\libimgui.a.p" "-Isubprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking\backends" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fvisibility=hidden" "-fdiagnostics-color=always" "-D_GLIBCXX_ASSERTIONS=1" "-D_FILE_OFFSET_BITS=64" "-Wall" "-Winvalid-pch" "-Wextra" "-Wpedantic" "-Werror" "-std=c++17" "-O0" "-g" "-DIMGUI_API=" -MD -MQ subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_dx10.cpp.obj -MF "subprojects\imgui-1.91.6-docking\libimgui.a.p\backends_imgui_impl_dx10.cpp.obj.d" -o subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_dx10.cpp.obj "-c" ../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx10.cpp
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx10.cpp:570:32: error: extension used [-Werror,-Wlanguage-extension-token]
+    if (device->QueryInterface(IID_PPV_ARGS(&pDXGIDevice)) == S_OK)
+                               ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um\combaseapi.h:207:30: note: expanded from macro 'IID_PPV_ARGS'
+#define IID_PPV_ARGS(ppType) __uuidof(**(ppType)), IID_PPV_ARGS_Helper(ppType)
+                             ^
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx10.cpp:571:36: error: extension used [-Werror,-Wlanguage-extension-token]
+        if (pDXGIDevice->GetParent(IID_PPV_ARGS(&pDXGIAdapter)) == S_OK)
+                                   ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um\combaseapi.h:207:30: note: expanded from macro 'IID_PPV_ARGS'
+#define IID_PPV_ARGS(ppType) __uuidof(**(ppType)), IID_PPV_ARGS_Helper(ppType)
+                             ^
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx10.cpp:572:41: error: extension used [-Werror,-Wlanguage-extension-token]
+            if (pDXGIAdapter->GetParent(IID_PPV_ARGS(&pFactory)) == S_OK)
+                                        ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um\combaseapi.h:207:30: note: expanded from macro 'IID_PPV_ARGS'
+#define IID_PPV_ARGS(ppType) __uuidof(**(ppType)), IID_PPV_ARGS_Helper(ppType)
+                             ^
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx10.cpp:660:37: error: extension used [-Werror,-Wlanguage-extension-token]
+        vd->SwapChain->GetBuffer(0, IID_PPV_ARGS(&pBackBuffer));
+                                    ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um\combaseapi.h:207:30: note: expanded from macro 'IID_PPV_ARGS'
+#define IID_PPV_ARGS(ppType) __uuidof(**(ppType)), IID_PPV_ARGS_Helper(ppType)
+                             ^
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx10.cpp:695:37: error: extension used [-Werror,-Wlanguage-extension-token]
+        vd->SwapChain->GetBuffer(0, IID_PPV_ARGS(&pBackBuffer));
+                                    ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um\combaseapi.h:207:30: note: expanded from macro 'IID_PPV_ARGS'
+#define IID_PPV_ARGS(ppType) __uuidof(**(ppType)), IID_PPV_ARGS_Helper(ppType)
+                             ^
+5 errors generated.
+[14/30] Compiling C++ object subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_dx11.cpp.obj
+FAILED: [code=1] subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_dx11.cpp.obj 
+"clang++" "-Isubprojects\imgui-1.91.6-docking\libimgui.a.p" "-Isubprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking" "-I..\subprojects\imgui-1.91.6-docking\backends" "-I..\subprojects\glfw-3.4\include" "-I..\subprojects\glfw-3.4\src" "-fvisibility=hidden" "-fdiagnostics-color=always" "-D_GLIBCXX_ASSERTIONS=1" "-D_FILE_OFFSET_BITS=64" "-Wall" "-Winvalid-pch" "-Wextra" "-Wpedantic" "-Werror" "-std=c++17" "-O0" "-g" "-DIMGUI_API=" -MD -MQ subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_dx11.cpp.obj -MF "subprojects\imgui-1.91.6-docking\libimgui.a.p\backends_imgui_impl_dx11.cpp.obj.d" -o subprojects/imgui-1.91.6-docking/libimgui.a.p/backends_imgui_impl_dx11.cpp.obj "-c" ../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx11.cpp
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx11.cpp:594:32: error: extension used [-Werror,-Wlanguage-extension-token]
+    if (device->QueryInterface(IID_PPV_ARGS(&pDXGIDevice)) == S_OK)
+                               ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um\combaseapi.h:207:30: note: expanded from macro 'IID_PPV_ARGS'
+#define IID_PPV_ARGS(ppType) __uuidof(**(ppType)), IID_PPV_ARGS_Helper(ppType)
+                             ^
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx11.cpp:595:36: error: extension used [-Werror,-Wlanguage-extension-token]
+        if (pDXGIDevice->GetParent(IID_PPV_ARGS(&pDXGIAdapter)) == S_OK)
+                                   ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um\combaseapi.h:207:30: note: expanded from macro 'IID_PPV_ARGS'
+#define IID_PPV_ARGS(ppType) __uuidof(**(ppType)), IID_PPV_ARGS_Helper(ppType)
+                             ^
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx11.cpp:596:41: error: extension used [-Werror,-Wlanguage-extension-token]
+            if (pDXGIAdapter->GetParent(IID_PPV_ARGS(&pFactory)) == S_OK)
+                                        ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um\combaseapi.h:207:30: note: expanded from macro 'IID_PPV_ARGS'
+#define IID_PPV_ARGS(ppType) __uuidof(**(ppType)), IID_PPV_ARGS_Helper(ppType)
+                             ^
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx11.cpp:687:37: error: extension used [-Werror,-Wlanguage-extension-token]
+        vd->SwapChain->GetBuffer(0, IID_PPV_ARGS(&pBackBuffer));
+                                    ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um\combaseapi.h:207:30: note: expanded from macro 'IID_PPV_ARGS'
+#define IID_PPV_ARGS(ppType) __uuidof(**(ppType)), IID_PPV_ARGS_Helper(ppType)
+                             ^
+../subprojects/imgui-1.91.6-docking/backends/imgui_impl_dx11.cpp:722:37: error: extension used [-Werror,-Wlanguage-extension-token]
+        vd->SwapChain->GetBuffer(0, IID_PPV_ARGS(&pBackBuffer));
+                                    ^
+C:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um\combaseapi.h:207:30: note: expanded from macro 'IID_PPV_ARGS'
+#define IID_PPV_ARGS(ppType) __uuidof(**(ppType)), IID_PPV_ARGS_Helper(ppType)
+                             ^
+5 errors generated.
+ninja: build stopped: subcommand failed.

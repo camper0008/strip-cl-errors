@@ -1,6 +1,6 @@
-# slinkerr
+# sclerr
 
-filters garbage from cl linker errors
+filters garbage from cl errors
 
 turns test/err.txt (~7kb) into:
 

@@ -1,5 +1,5 @@
 [project]
-name = "slinkerr"
+name = "sclerr"
 version = "0.1.0"
 description = "Strips garbage from c++ linker errors"
 readme = "README.md"
@@ -7,4 +7,4 @@ requires-python = "==3.9.*"
 dependencies = []
 
 [project.scripts]
-slinkerr = "slinkerr:main"
+sclerr = "sclerr:main"

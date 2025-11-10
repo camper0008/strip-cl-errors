@@ -1,5 +1,3 @@
-import sys
-
 
 def cull_angle_brackets(line: str) -> str:
     open_brackets = []
@@ -32,14 +30,7 @@ def cull_question_parenthesis(line: str) -> str:
         line = line[:start] + line[end:]
     return line
 
-
-def main():
-    for line in sys.stdin:
-        if not "LNK2019" in line:
-            continue
-
-        print(cull_question_parenthesis(cull_angle_brackets(line)))
-
-
-if __name__ == "__main__":
-    main()
+def strip_linker_errors(line: str) -> str:
+    if "LNK2019" not in line:
+        return line
+    return cull_question_parenthesis(cull_angle_brackets(line))
