@@ -10,7 +10,7 @@ def cull_angle_brackets(line: str) -> str:
             if len(open_brackets) == 0:
                 brackets.insert(0, (start, i))
     for start, end in brackets:
-        line = line[:start] + line[end:]
+        line = line[:start] + "<..>" + line[end + 1:]
     return line
 
 
@@ -27,7 +27,7 @@ def cull_question_parenthesis(line: str) -> str:
             if len(open_brackets) == 0:
                 brackets.insert(0, (start, i))
     for start, end in brackets:
-        line = line[:start] + line[end:]
+        line = line[:start] + "(?..)" + line[end+1:]
     return line
 
 def strip_linker_errors(line: str) -> str:
