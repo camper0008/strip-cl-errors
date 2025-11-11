@@ -1,4 +1,3 @@
-
 def cull_angle_brackets(line: str) -> str:
     open_brackets = []
     brackets: list[tuple[int, int]] = []
@@ -10,7 +9,7 @@ def cull_angle_brackets(line: str) -> str:
             if len(open_brackets) == 0:
                 brackets.insert(0, (start, i))
     for start, end in brackets:
-        line = line[:start] + "<..>" + line[end + 1:]
+        line = line[:start] + "<..>" + line[end + 1 :]
     return line
 
 
@@ -27,10 +26,24 @@ def cull_question_parenthesis(line: str) -> str:
             if len(open_brackets) == 0:
                 brackets.insert(0, (start, i))
     for start, end in brackets:
-        line = line[:start] + line[end+1:]
+        line = line[:start] + line[end + 1 :]
     return line
+
+
+def cull_cdecl(line: str) -> str:
+    return line.replace("__cdecl", "")
+
+
+def cull_whitespace(line: str) -> str:
+    line = line
+    while "  " in line:
+        line = line.replace("  ", " ")
+    return line
+
 
 def strip_linker_errors(line: str) -> str:
     if "LNK2019" not in line:
         return line
-    return cull_question_parenthesis(cull_angle_brackets(line))
+    return cull_whitespace(
+        cull_cdecl(cull_question_parenthesis(cull_angle_brackets(line)))
+    )

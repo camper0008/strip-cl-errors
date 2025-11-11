@@ -1,6 +1,6 @@
 [project]
 name = "sclerr"
-version = "0.1.2"
+version = "0.1.3"
 description = "Strips garbage from c++ linker errors"
 readme = "README.md"
 requires-python = "==3.9.*"
@@ -8,3 +8,6 @@ dependencies = []
 
 [project.scripts]
 sclerr = "sclerr:main"
+
+[tool.uv]
+package = true

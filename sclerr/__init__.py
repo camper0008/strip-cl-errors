@@ -4,10 +4,15 @@ import argparse
 from .compile import should_skip_multiple, should_skip_count
 from .linker import strip_linker_errors
 
+
 def main():
     parser = argparse.ArgumentParser("sclerr")
-    parser.add_argument("--unstable-compile", action='store_true')
+    parser.add_argument("--unstable-compile", action="store_true")
+    parser.add_argument("-v", "--version", action="store_true")
     args = parser.parse_args()
+    if args.version:
+        print("sclerr@0.1.3")
+        exit(0)
     is_skipping = False
     skip_count = 0
     for line in sys.stdin:
@@ -16,7 +21,7 @@ def main():
                 skip_count -= 1
                 continue
             is_skipping = should_skip_multiple(line, is_skipping)
-            
+
             if is_skipping:
                 continue
 
