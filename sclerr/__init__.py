@@ -1,5 +1,6 @@
 import sys
 import argparse
+import importlib.metadata
 
 from .compile import should_skip_multiple, should_skip_count
 from .linker import strip_linker_errors
@@ -7,16 +8,17 @@ from .linker import strip_linker_errors
 
 def main():
     parser = argparse.ArgumentParser("sclerr")
-    parser.add_argument("--unstable-compile", action="store_true")
+    parser.add_argument("--unstable-strip-compile", action="store_true")
     parser.add_argument("-v", "--version", action="store_true")
+    parser.add_argument("-lbd", "--linker-bracket-depth", type=int, default=0)
     args = parser.parse_args()
     if args.version:
-        print("sclerr@0.1.3")
+        print(f"sclerr@{importlib.metadata.version('sclerr')}")
         exit(0)
     is_skipping = False
     skip_count = 0
     for line in sys.stdin:
-        if args.unstable_compile:
+        if args.unstable_strip_compile:
             if skip_count > 0:
                 skip_count -= 1
                 continue
@@ -29,7 +31,7 @@ def main():
             if skip_count > 0:
                 skip_count -= 1
                 continue
-        print(strip_linker_errors(line))
+        print(strip_linker_errors(line, args.linker_bracket_depth))
 
 
 if __name__ == "__main__":

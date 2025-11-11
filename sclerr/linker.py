@@ -1,4 +1,4 @@
-def cull_angle_brackets(line: str) -> str:
+def cull_angle_brackets(line: str, depth: int) -> str:
     open_brackets = []
     brackets: list[tuple[int, int]] = []
     for i, ch in enumerate(line):
@@ -6,7 +6,7 @@ def cull_angle_brackets(line: str) -> str:
             open_brackets.append(i)
         if ch == ">":
             start = open_brackets.pop()
-            if len(open_brackets) == 0:
+            if len(open_brackets) == depth:
                 brackets.insert(0, (start, i))
     for start, end in brackets:
         line = line[:start] + "<..>" + line[end + 1 :]
@@ -41,9 +41,12 @@ def cull_whitespace(line: str) -> str:
     return line
 
 
-def strip_linker_errors(line: str) -> str:
+def strip_linker_errors(line: str, linker_bracket_depth: int) -> str:
     if "LNK2019" not in line:
         return line
+
     return cull_whitespace(
-        cull_cdecl(cull_question_parenthesis(cull_angle_brackets(line)))
+        cull_cdecl(
+            cull_question_parenthesis(cull_angle_brackets(line, linker_bracket_depth))
+        )
     )
