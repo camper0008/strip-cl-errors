@@ -42,11 +42,15 @@ def cull_whitespace(line: str) -> str:
 
 
 def strip_linker_errors(line: str, linker_bracket_depth: int) -> str:
-    if "LNK2019" not in line:
-        return line
+    if line.startswith('"link"'):
+        return ""
 
-    return cull_whitespace(
-        cull_cdecl(
-            cull_question_parenthesis(cull_angle_brackets(line, linker_bracket_depth))
+    if "LNK2019" in line:
+        return cull_whitespace(
+            cull_cdecl(
+                cull_question_parenthesis(
+                    cull_angle_brackets(line, linker_bracket_depth)
+                )
+            )
         )
-    )
+    return line
