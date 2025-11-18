@@ -38,7 +38,7 @@ def cull_whitespace(line: str) -> str:
     line = line
     while "  " in line:
         line = line.replace("  ", " ")
-    return line
+    return line.strip()
 
 
 def strip_linker_errors(line: str, linker_bracket_depth: int) -> str:

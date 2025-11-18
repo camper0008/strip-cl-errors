@@ -31,7 +31,9 @@ def main():
             if skip_count > 0:
                 skip_count -= 1
                 continue
-        print(strip_linker_errors(line, args.linker_bracket_depth))
+        result = strip_linker_errors(line, args.linker_bracket_depth)
+        if result.strip() != "":
+            print(result)
 
 
 if __name__ == "__main__":
